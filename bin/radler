@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'radler'
+
+app = Radler::CommandLineApp.new
+app.route
