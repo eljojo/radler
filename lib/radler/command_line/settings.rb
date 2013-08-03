@@ -12,6 +12,8 @@ module Radler
         @settings.aws_access_key_id = STDIN.gets.strip
         puts "please paste your AWS secret access key"
         @settings.aws_secret_access_key = STDIN.gets.strip
+        puts "which aws region would you like to use? (eu-west-1 / us-west-1 / etc)"
+        @settings.region = STDIN.gets.strip
         puts "coolio!, now they'll be stored in #{@settings.filename}"
         @settings.save
       end
